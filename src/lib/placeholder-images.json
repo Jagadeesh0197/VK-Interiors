@@ -14,8 +14,8 @@
     },
     {
       "id": "about-image",
-      "description": "An interior designer sketching plans at a sunlit desk.",
-      "imageUrl": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxpbnRlcmlvciUyMGRlc2lnbiUyMHRlYW18ZW58MHx8fHwxNzIxODIwMjMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "A team of designers collaborating and discussing plans in a creative workspace.",
+      "imageUrl": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbvRlcmlvciUyMGRlc2lnbiUyMHRlYW0lMjBkaXNjdXNzaW5nfGVufDB8fHx8MTcyMjU0MjYxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "designer team"
     },
     {
@@ -111,8 +111,8 @@
     {
       "id": "trending-outdoor-2",
       "description": "A beautiful garden with a stone pathway and lush greenery.",
-      "imageUrl": "https://images.unsplash.com/photo-1449844908441-8829872d2607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxnYXJkZW4lMjBkZXNpZ258ZW58MHx8fHwxNzIyNDk4MjUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "garden design"
+      "imageUrl": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvdXRkb29yJTIwbGl2aW5nfGVufDB8fHx8MTcyMjU0MjcwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "outdoor living"
     },
     {
       "id": "trending-outdoor-3",
