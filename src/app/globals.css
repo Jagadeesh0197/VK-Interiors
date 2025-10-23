@@ -74,3 +74,15 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .embla__slide {
+    transition: opacity 0.2s ease-in-out;
+    opacity: 0.5;
+    filter: blur(2px);
+  }
+  .embla__slide.is-snapped {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}

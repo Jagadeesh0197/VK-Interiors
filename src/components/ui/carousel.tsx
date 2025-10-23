@@ -28,6 +28,7 @@ type CarouselContextProps = {
   scrollNext: () => void
   canScrollPrev: boolean
   canScrollNext: boolean
+  onSelect: () => void
 } & CarouselProps
 
 const CarouselContext = React.createContext<CarouselContextProps | null>(null)
@@ -75,6 +76,16 @@ const Carousel = React.forwardRef<
 
       setCanScrollPrev(api.canScrollPrev())
       setCanScrollNext(api.canScrollNext())
+      
+      // Add is-snapped class to the selected slide
+      api.slidesInView().forEach((index) => {
+        const slide = api.slideNodes()[index]
+        if (slide) {
+          api.slideNodes().forEach(s => s.classList.remove('is-snapped'));
+          slide.classList.add('is-snapped');
+        }
+      });
+
     }, [])
 
     const scrollPrev = React.useCallback(() => {
@@ -114,9 +125,11 @@ const Carousel = React.forwardRef<
       onSelect(api)
       api.on("reInit", onSelect)
       api.on("select", onSelect)
+      api.on('scroll', onSelect)
 
       return () => {
         api?.off("select", onSelect)
+        api?.off("scroll", onSelect)
       }
     }, [api, onSelect])
 
@@ -126,6 +139,7 @@ const Carousel = React.forwardRef<
           carouselRef,
           api: api,
           opts,
+          onSelect,
           orientation:
             orientation || (opts?.axis === "y" ? "vertical" : "horizontal"),
           scrollPrev,
@@ -157,11 +171,11 @@ const CarouselContent = React.forwardRef<
   const { carouselRef, orientation } = useCarousel()
 
   return (
-    <div ref={carouselRef} className="overflow-hidden">
+    <div ref={carouselRef} className="overflow-hidden embla">
       <div
         ref={ref}
         className={cn(
-          "flex",
+          "flex embla__container",
           orientation === "horizontal" ? "-ml-4" : "-mt-4 flex-col",
           className
         )}
@@ -184,7 +198,7 @@ const CarouselItem = React.forwardRef<
       role="group"
       aria-roledescription="slide"
       className={cn(
-        "min-w-0 shrink-0 grow-0 basis-full",
+        "min-w-0 shrink-0 grow-0 basis-full embla__slide",
         orientation === "horizontal" ? "pl-4" : "pt-4",
         className
       )}

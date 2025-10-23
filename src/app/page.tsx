@@ -5,6 +5,7 @@ import { AboutSection } from '@/components/sections/about';
 import { ServicesSection } from '@/components/sections/services';
 import { WhyUsSection } from '@/components/sections/why-us';
 import { GallerySection } from '@/components/sections/gallery';
+import { TrendingStylesSection } from '@/components/sections/trending-styles';
 import { ContactSection } from '@/components/sections/contact';
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
         <ServicesSection />
         <WhyUsSection />
         <GallerySection />
+        <TrendingStylesSection />
         <ContactSection />
       </main>
       <SiteFooter />
