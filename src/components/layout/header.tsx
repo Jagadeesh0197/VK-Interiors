@@ -1,9 +1,17 @@
+
 "use client";
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 import { Menu, Building } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -63,7 +71,13 @@ export function SiteHeader() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[280px] bg-background">
-              <div className="flex h-full flex-col p-6">
+              <SheetHeader className="sr-only">
+                <SheetTitle>Mobile Menu</SheetTitle>
+                <SheetDescription>
+                  Main navigation menu for mobile devices.
+                </SheetDescription>
+              </SheetHeader>
+              <div className="flex h-full flex-col p-6 pt-0">
                 <Link href="/" className="mb-8 flex items-center gap-2 font-bold text-lg text-primary" onClick={closeMobileMenu}>
                   <Building className="h-6 w-6" />
                   <span>VK Interiors</span>
