@@ -99,9 +99,9 @@ export function ContactSection() {
                         {state.errors?.name && <p className="mt-2 text-sm text-destructive">{state.errors.name[0]}</p>}
                     </div>
                     <div>
-                        <Label htmlFor="email">Email</Label>
-                        <Input id="email" name="email" type="email" placeholder="your@email.com" required className="mt-2" />
-                        {state.errors?.email && <p className="mt-2 text-sm text-destructive">{state.errors.email[0]}</p>}
+                        <Label htmlFor="contactInfo">Email / Mobile Number</Label>
+                        <Input id="contactInfo" name="contactInfo" type="text" placeholder="your@email.com or +919876543210" required className="mt-2" />
+                        {state.errors?.contactInfo && <p className="mt-2 text-sm text-destructive">{state.errors.contactInfo[0]}</p>}
                     </div>
                     <div>
                         <Label htmlFor="message">Message</Label>
