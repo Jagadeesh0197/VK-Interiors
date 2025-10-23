@@ -41,15 +41,15 @@ export function ContactSection() {
   }, [state, toast]);
 
   return (
-    <section id="contact" className="py-20 sm:py-32 bg-background">
+    <section id="contact" className="py-20 sm:py-32 bg-secondary/20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn>
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-              Let's Talk
+              Get in Touch
             </h2>
             <p className="mt-4 text-lg leading-8 text-foreground/80">
-              Have a project in mind? We'd love to hear from you.
+              Have a project in mind? We'd love to hear from you. Fill out the form below to get started.
             </p>
           </div>
         </FadeIn>
