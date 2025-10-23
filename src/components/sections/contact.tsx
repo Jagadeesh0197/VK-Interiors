@@ -100,7 +100,7 @@ export function ContactSection() {
                     </div>
                     <div>
                         <Label htmlFor="contactInfo">Email / Mobile Number</Label>
-                        <Input id="contactInfo" name="contactInfo" type="text" placeholder="your@email.com or +919876543210" required className="mt-2" />
+                        <Input id="contactInfo" name="contactInfo" type="text" placeholder="your@email.com or +91 9999988888" required className="mt-2" />
                         {state.errors?.contactInfo && <p className="mt-2 text-sm text-destructive">{state.errors.contactInfo[0]}</p>}
                     </div>
                     <div>
@@ -121,10 +121,6 @@ export function ContactSection() {
                         <a href="mailto:info@vkinteriors.com" className="flex items-center gap-4 group">
                             <Mail className="h-6 w-6 text-primary" />
                             <span className="group-hover:text-primary transition-colors">info@vkinteriors.com</span>
-                        </a>
-                        <a href="tel:+919876543210" className="flex items-center gap-4 group">
-                            <Phone className="h-6 w-6 text-primary" />
-                            <span className="group-hover:text-primary transition-colors">+91-98765-43210</span>
                         </a>
                         <a href="#" className="flex items-center gap-4 group">
                             <InstagramIcon className="h-6 w-6 text-primary" />
