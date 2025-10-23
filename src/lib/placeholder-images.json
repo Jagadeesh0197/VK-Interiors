@@ -1,3 +1,52 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-image",
+      "description": "A beautifully designed modern living room with large windows and comfortable furniture.",
+      "imageUrl": "https://images.unsplash.com/photo-1638885930125-85350348d266?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtb2Rlcm4lMjBsaXZpbmclMjByb29tfGVufDB8fHx8MTc2MTE5ODQzOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern living room"
+    },
+    {
+      "id": "about-image",
+      "description": "An interior designer sketching plans at a sunlit desk.",
+      "imageUrl": "https://images.unsplash.com/photo-1521391406205-4a6af174a4c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkZXNpZ25lciUyMHNrZXRjaHxlbnwwfHx8fDE3NjEyMzMxMTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "designer sketch"
+    },
+    {
+      "id": "gallery-1",
+      "description": "A minimalist modern kitchen with a marble island.",
+      "imageUrl": "https://images.unsplash.com/photo-1592506119503-c0b18879bd5a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBraXRjaGVufGVufDB8fHx8MTc2MTIyMDIzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern kitchen"
+    },
+    {
+      "id": "gallery-2",
+      "description": "A serene bedroom with soft lighting and natural textures.",
+      "imageUrl": "https://images.unsplash.com/photo-1599243075095-7199cae2c164?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtaW5pbWFsaXN0JTIwYmVkcm9vbXxlbnwwfHx8fDE3NjEyMzMxMTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "minimalist bedroom"
+    },
+    {
+      "id": "gallery-3",
+      "description": "A luxury bathroom with a freestanding tub and gold fixtures.",
+      "imageUrl": "https://images.unsplash.com/photo-1662624914003-9bb2095ca7a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxsdXh1cnklMjBiYXRocm9vbXxlbnwwfHx8fDE3NjEyMzI5NTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "luxury bathroom"
+    },
+    {
+      "id": "gallery-4",
+      "description": "A sleek and professional corporate office space.",
+      "imageUrl": "https://images.unsplash.com/photo-1556761175-4b46a572b786?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxvZmZpY2UlMjBzcGFjZXxlbnwwfHx8fDE3NjEyMDA1NTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "office space"
+    },
+    {
+      "id": "gallery-5",
+      "description": "A cozy reading corner with a comfortable armchair and a bookshelf.",
+      "imageUrl": "https://images.unsplash.com/photo-1707087604430-47c426752d21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb3p5JTIwY29ybmVyfGVufDB8fHx8MTc2MTIwNzkxMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cozy corner"
+    },
+    {
+      "id": "gallery-6",
+      "description": "An elegant dining area set for a formal dinner.",
+      "imageUrl": "https://images.unsplash.com/photo-1735146071436-4ceb5f8c2866?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkaW5pbmclMjBhcmVhfGVufDB8fHx8MTc2MTEyOTA0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dining area"
+    }
+  ]
 }
