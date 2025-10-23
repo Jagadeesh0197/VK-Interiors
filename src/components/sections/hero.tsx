@@ -1,23 +1,15 @@
-import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import { ImageTransition } from '@/components/image-transition';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
+
 
 export function HeroSection() {
-  const heroImage = PlaceHolderImages.find(p => p.id === 'hero-image');
+  const heroImages = PlaceHolderImages.filter(p => p.id.startsWith('hero-'));
 
   return (
     <section id="home" className="relative h-[80dvh] min-h-[500px] w-full">
-      {heroImage && (
-        <Image
-          src={heroImage.imageUrl}
-          alt={heroImage.description}
-          fill
-          priority
-          className="object-cover"
-          data-ai-hint={heroImage.imageHint}
-        />
-      )}
+      <ImageTransition images={heroImages} />
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/20" />
       <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

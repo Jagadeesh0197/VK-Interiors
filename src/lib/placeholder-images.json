@@ -1,10 +1,16 @@
 {
   "placeholderImages": [
     {
-      "id": "hero-image",
+      "id": "hero-image-1",
       "description": "A beautifully designed modern living room with large windows and comfortable furniture.",
       "imageUrl": "https://images.unsplash.com/photo-1618220179428-22790b461013?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbnRlcmlvciUyMGRlc2lnbnxlbnwwfHx8fDE3MjE4MTk3MTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "interior design"
+    },
+    {
+      "id": "hero-image-2",
+      "description": "A stylish and modern interior with a focus on minimalist design and natural light.",
+      "imageUrl": "https://images.unsplash.com/photo-1530013589788-5170c1b73dd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxpbnRlcmlvciUyMGRlc2lnbnxlbnwwfHx8fDE3MjI0OTc4OTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern interior"
     },
     {
       "id": "about-image",
@@ -21,13 +27,13 @@
     {
       "id": "gallery-2",
       "description": "A serene bedroom with soft lighting and natural textures.",
-      "imageUrl": "https://images.unsplash.com/photo-1615875605825-5eb9bb5c6999?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBiZWRyb29tfGVufDB8fHx8MTcyMTgyMDI4MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1615875605825-5eb9bb5c6999?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBiZWRyb29tfGVufDB8fHx8MTcyMjQ5ODIyN3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "modern bedroom"
     },
     {
       "id": "gallery-3",
       "description": "A luxury bathroom with a freestanding tub and gold fixtures.",
-      "imageUrl": "https://images.unsplash.com/photo-1600607687939-ce8a67761195?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxsdXh1cnklMjBiYXRocm9vbXxlbnwwfHx8fDE3MjE4MjAyODB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1600607687939-ce8a67761195?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxleHBlbnNpdmUlMjBiYXRocm9vbXxlbnwwfHx8fDE3MjI0OTgyNDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "luxury bathroom"
     },
     {
@@ -39,7 +45,7 @@
     {
       "id": "gallery-5",
       "description": "A cozy reading corner with a comfortable armchair and a bookshelf.",
-      "imageUrl": "https://images.unsplash.com/photo-1544392439-16624a4073b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb21tZXJjaWFsJTIwc3BhY2V8ZW58MHx8fHwxNzIxODIwNTk0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1544392439-16624a4073b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjb21tZXJjaWFsJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzIyNDk4MzAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "commercial space"
     },
     {
@@ -57,7 +63,7 @@
     {
       "id": "trending-livingroom-2",
       "description": "A bright living room with minimalist furniture and a view of the city.",
-      "imageUrl": "https://images.unsplash.com/photo-1567016376408-0226e4d0c1e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmaW5lJTIwbGl2aW5nJTIwcm9vbXxlbnwwfHx8fDE3MjIwMDI4MzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1567016376408-0226e4d0c1e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmaW5lJTIwbGl2aW5nJTIwcm9vbXxlbnwwfHx8fDE3MjI0OTgyNjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "bright livingroom"
     },
     {
@@ -93,25 +99,25 @@
     {
       "id": "trending-bedroom-4",
       "description": "A bedroom with a rustic design, featuring wood accents and natural light.",
-      "imageUrl": "https://images.unsplash.com/photo-1593056121406-b333758b8f28?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxydXN0aWMlMjBiZWRyb29tfGVufDB8fHx8MTcyMjAwMjk3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1593056121406-b333758b8f28?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxydXN0aWMlMjBiZWRyb29tfGVufDB8fHx8MTcyMjQ5ODMyNHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "rustic bedroom"
     },
     {
       "id": "trending-outdoor-1",
       "description": "A modern patio with comfortable seating and a fire pit.",
-      "imageUrl": "https://images.unsplash.com/photo-1566728595333-75a1d7cae33a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBwYXRpb3xlbnwwfHx8fDE3MjI0NTY3MTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1613977257363-313227a24911?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBwYXRpb3xlbnwwfHx8fDE3MjI0OTgyODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "modern patio"
     },
     {
       "id": "trending-outdoor-2",
       "description": "A beautiful garden with a stone pathway and lush greenery.",
-      "imageUrl": "https://images.unsplash.com/photo-1588821323385-260a9f3d8385?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxnYXJkZW4lMjBkZXNpZ258ZW58MHx8fHwxNzIyNDU2NzQwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1449844908441-8829872d2607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxnYXJkZW4lMjBkZXNpZ258ZW58MHx8fHwxNzIyNDk4MjUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "garden design"
     },
     {
       "id": "trending-outdoor-3",
       "description": "A poolside lounge area with modern furniture and umbrellas.",
-      "imageUrl": "https://images.unsplash.com/photo-1613977093259-c4a79a8e8e2b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb29sc2lkZSUyMGxvdW5nZXxlbnwwfHx8fDE3MjI0NTY3Njh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1562438668-bcf0b15846c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwb29sc2lkZSUyMGxvdW5nZXxlbnwwfHx8fDE3MjI0OTgyMTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "poolside lounge"
     },
     {
