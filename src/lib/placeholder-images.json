@@ -21,13 +21,13 @@
     {
       "id": "gallery-2",
       "description": "A serene bedroom with soft lighting and natural textures.",
-      "imageUrl": "https://images.unsplash.com/photo-1615875605825-5eb9bb5c6999?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBiZWRyb29tfGVufDB8fHx8MTcyMTgyMDI4MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1604580040660-f0a7f9abaea6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBiZWRyb29tfGVufDB8fHx8MTc2MTE1NTQ3NXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "modern bedroom"
     },
     {
       "id": "gallery-3",
       "description": "A luxury bathroom with a freestanding tub and gold fixtures.",
-      "imageUrl": "https://images.unsplash.com/photo-1600607687939-ce8a67761195?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxsdXh1cnklMjBiYXRocm9vbXxlbnwwfHx8fDE3MjE4MjAyODB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxsdXh1cnklMjBiYXRocm9vbXxlbnwwfHx8fDE3NjEyMzI5NTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "luxury bathroom"
     },
     {
@@ -39,7 +39,7 @@
     {
       "id": "gallery-5",
       "description": "A cozy reading corner with a comfortable armchair and a bookshelf.",
-      "imageUrl": "https://images.unsplash.com/photo-1544392439-16624a4073b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb21tZXJjaWFsJTIwc3BhY2V8ZW58MHx8fHwxNzIxODIwNTk0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1758593386390-8f347fe13625?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y29tbWVyY2lhbCUyMHNwYWNlfGVufDB8fHx8MTc2MTE1MjU5NHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "commercial space"
     },
     {
@@ -69,7 +69,7 @@
     {
       "id": "trending-livingroom-4",
       "description": "An eclectic living room with vibrant colors and unique decor.",
-      "imageUrl": "https://images.unsplash.com/photo-1567016376408-0226e4d0c1e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmaW5lJTIwbGl2aW5nJTIwcm9vbXxlbnwwfHx8fDE3MjIwMDI4MzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1715355906932-e803f5c144e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlY2xlY3RpYyUyMGxpdmluZ3Jvb218ZW58MHx8fHwxNzYxMjM1NDg0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "eclectic livingroom"
     },
     {
@@ -93,7 +93,7 @@
     {
       "id": "trending-bedroom-4",
       "description": "A bedroom with a rustic design, featuring wood accents and natural light.",
-      "imageUrl": "https://images.unsplash.com/photo-1593056121406-b333758b8f28?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxydXN0aWMlMjBiZWRyb29tfGVufDB8fHx8MTcyMjAwMjk3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1750271334785-4f6008035021?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cnVzdGljJTIwYmVkcm9vbXxlbnwwfHx8fDE3NjExMzE2ODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "rustic bedroom"
     },
     {
