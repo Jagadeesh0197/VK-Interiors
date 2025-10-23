@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { PlaceHolderImages, type ImagePlaceholder } from '@/lib/placeholder-images';
-import { Dialog, DialogContent } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog';
 import { FadeIn } from '@/components/fade-in';
 import { ZoomIn } from 'lucide-react';
 
@@ -52,15 +52,18 @@ export function GallerySection() {
       <Dialog open={!!selectedImage} onOpenChange={(isOpen) => !isOpen && setSelectedImage(null)}>
         <DialogContent className="max-w-4xl p-0 border-0 bg-transparent">
           {selectedImage && (
-            <div className="relative aspect-video w-full">
-              <Image
-                src={selectedImage.imageUrl}
-                alt={selectedImage.description}
-                fill
-                className="object-contain"
-                data-ai-hint={selectedImage.imageHint}
-              />
-            </div>
+            <>
+              <DialogTitle className="sr-only">{selectedImage.description}</DialogTitle>
+              <div className="relative aspect-video w-full">
+                <Image
+                  src={selectedImage.imageUrl}
+                  alt={selectedImage.description}
+                  fill
+                  className="object-contain"
+                  data-ai-hint={selectedImage.imageHint}
+                />
+              </div>
+            </>
           )}
         </DialogContent>
       </Dialog>
