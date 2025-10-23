@@ -7,6 +7,7 @@ import { WhyUsSection } from '@/components/sections/why-us';
 import { GallerySection } from '@/components/sections/gallery';
 import { TrendingStylesSection } from '@/components/sections/trending-styles';
 import { ContactSection } from '@/components/sections/contact';
+import { FloatingContactButton } from '@/components/sections/floating-contact';
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <TrendingStylesSection />
         <ContactSection />
       </main>
+      <FloatingContactButton />
       <SiteFooter />
     </div>
   );
