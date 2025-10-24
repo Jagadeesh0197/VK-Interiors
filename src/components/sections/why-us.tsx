@@ -100,18 +100,18 @@ export function WhyUsSection() {
                         top: '50%',
                         originX: '50%',
                         originY: '50%',
-                        filter: isCenterCard ? 'none' : 'drop-shadow(0 0 5px rgba(0,0,0,0.1))',
                     }}
                     initial={{
                         x: '-50%',
                         y: '-50%',
                         rotate: (index - 2.5) * 5,
-                        scale: 1,
+                        scale: isCenterCard ? 1 : 0.95,
                     }}
                     animate={isInView ? {
-                        x: [null, `calc(${finalPos.x}px - 50%)`],
-                        y: [null, `calc(${finalPos.y}px - 50%)`],
+                        x: `calc(${finalPos.x}px - 50%)`,
+                        y: `calc(${finalPos.y}px - 50%)`,
                         rotate: 0,
+                        scale: 1,
                         transition: { 
                             delay: index * 0.1, 
                             duration: 0.8,
@@ -119,7 +119,7 @@ export function WhyUsSection() {
                         }
                     } : {}}
                 >
-                    <Card className="h-full text-center bg-card">
+                    <Card className={`h-full text-center bg-card transition-shadow duration-300 ${!isInView && index !== 1 ? 'shadow-lg' : ''}`}>
                     <CardHeader>
                         <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
                         {reason.icon}
