@@ -6,6 +6,7 @@ import { ServicesSection } from '@/components/sections/services';
 import { WhyUsSection } from '@/components/sections/why-us';
 import { GallerySection } from '@/components/sections/gallery';
 import { TrendingStylesSection } from '@/components/sections/trending-styles';
+import { FaqSection } from '@/components/sections/faq';
 import { ContactSection } from '@/components/sections/contact';
 import { FloatingContactButton } from '@/components/sections/floating-contact';
 
@@ -20,6 +21,7 @@ export default function Home() {
         <WhyUsSection />
         <GallerySection />
         <TrendingStylesSection />
+        <FaqSection />
         <ContactSection />
       </main>
       <FloatingContactButton />
