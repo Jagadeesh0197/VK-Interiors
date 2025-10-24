@@ -90,7 +90,7 @@ export function ServicesSection() {
                   >
                     <motion.div
                       initial={{ x: '-100%' }}
-                      whileInView={{ x: 0 }}
+                      whileInView={{ x: '0%' }}
                       viewport={{ once: true, amount: 0.8 }}
                       transition={{
                         type: "spring",
@@ -98,6 +98,7 @@ export function ServicesSection() {
                         damping: 20,
                         delay: 0.2 + index * 0.1,
                       }}
+                      className="flex items-center justify-center"
                     >
                       {service.icon}
                     </motion.div>
