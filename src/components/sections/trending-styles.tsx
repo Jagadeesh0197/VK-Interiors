@@ -4,14 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import { PlaceHolderImages, type ImagePlaceholder } from '@/lib/placeholder-images';
 import { Card, CardContent } from "@/components/ui/card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  type CarouselApi,
-} from "@/components/ui/carousel";
 import { FadeIn } from '@/components/fade-in';
-import Autoplay from "embla-carousel-autoplay";
 
 const trendingCategories = [
   {
@@ -32,68 +25,16 @@ const trendingCategories = [
   },
 ];
 
-function TrendingCarousel({ images }: { images: ImagePlaceholder[] }) {
-  const [api, setApi] = React.useState<CarouselApi>();
-  const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
-  );
-
-  const updateSlideStyles = React.useCallback((api: CarouselApi) => {
-    if (!api) return;
-
-    const slides = api.slideNodes();
-    const inView = api.slidesInView();
-
-    slides.forEach((slide, index) => {
-      if (inView.includes(index)) {
-        slide.classList.add('is-snapped');
-      } else {
-        slide.classList.remove('is-snapped');
-      }
-    });
-
-    if (inView.length > 0) {
-      slides.forEach(s => s.classList.remove('is-snapped'));
-      const centerSlideIndex = inView[Math.floor(inView.length / 2)];
-       if(slides[centerSlideIndex]) {
-         slides[centerSlideIndex].classList.add('is-snapped');
-       }
-    }
-
-  }, []);
-
-
-  React.useEffect(() => {
-    if (!api) {
-      return;
-    }
-    updateSlideStyles(api);
-    api.on("select", updateSlideStyles);
-    api.on("reInit", updateSlideStyles);
-    
-    return () => {
-        api.off("select", updateSlideStyles);
-        api.off("reInit", updateSlideStyles);
-    }
-  }, [api, updateSlideStyles]);
+function TickerTapeCarousel({ images }: { images: ImagePlaceholder[] }) {
+  // Duplicate images for a seamless loop
+  const duplicatedImages = [...images, ...images];
 
   return (
-    <Carousel
-      setApi={setApi}
-      plugins={[plugin.current]}
-      className="w-full"
-      opts={{
-        align: "center",
-        loop: true,
-      }}
-      onMouseEnter={plugin.current.stop}
-      onMouseLeave={plugin.current.reset}
-    >
-      <CarouselContent className="-ml-4">
-        {images.map((image) => (
-          <CarouselItem key={image.id} className="pl-4 md:basis-1/2 lg:basis-1/3">
-            <div className="p-1">
-              <Card className="overflow-hidden">
+    <div className="group w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)]">
+      <div className="flex animate-scroll group-hover:[animation-play-state:paused]">
+        {duplicatedImages.map((image, index) => (
+          <div key={`${image.id}-${index}`} className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 p-2">
+             <Card className="overflow-hidden">
                 <CardContent className="relative flex aspect-video items-center justify-center p-0">
                   <Image
                     src={image.imageUrl}
@@ -105,13 +46,13 @@ function TrendingCarousel({ images }: { images: ImagePlaceholder[] }) {
                   />
                 </CardContent>
               </Card>
-            </div>
-          </CarouselItem>
+          </div>
         ))}
-      </CarouselContent>
-    </Carousel>
+      </div>
+    </div>
   );
 }
+
 
 export function TrendingStylesSection() {
   return (
@@ -133,7 +74,7 @@ export function TrendingStylesSection() {
               <FadeIn key={category.title}>
                 <div>
                   <h3 className="text-2xl font-semibold mb-8 text-center">{category.title}</h3>
-                  <TrendingCarousel images={images} />
+                  <TickerTapeCarousel images={images} />
                 </div>
               </FadeIn>
             );
