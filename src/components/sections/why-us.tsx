@@ -40,7 +40,7 @@ const reasons = [
 
 export function WhyUsSection() {
   const containerRef = useRef<HTMLDivElement>(null);
-  const isInView = useInView(containerRef, { once: true, amount: 0.3 });
+  const isInView = useInView(containerRef, { amount: 0.3 });
 
   const containerVariants = {
     hidden: {},
