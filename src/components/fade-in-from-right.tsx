@@ -10,7 +10,8 @@ export function FadeInFromRight({ children, className }: { children: ReactNode, 
       ([entry]) => {
         if (entry.isIntersecting) {
           entry.target.classList.remove('opacity-0', 'translate-x-20');
-          observer.unobserve(entry.target);
+        } else {
+          entry.target.classList.add('opacity-0', 'translate-x-20');
         }
       },
       {
