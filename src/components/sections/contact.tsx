@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Mail, Phone } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import { FadeIn } from "../fade-in";
 
 function SubmitButton() {
@@ -122,6 +122,14 @@ export function ContactSection() {
                             <Mail className="h-6 w-6 text-primary" />
                             <span className="group-hover:text-primary transition-colors">info@vkinteriors.com</span>
                         </a>
+                        <div className="flex items-start gap-4">
+                            <MapPin className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                            <div>
+                                <span className="font-medium">123 Design Avenue, Suite 456</span>
+                                <br />
+                                <span className="text-foreground/80">Creativity City, IN 78901</span>
+                            </div>
+                        </div>
                         <a href="#" className="flex items-center gap-4 group">
                             <InstagramIcon className="h-6 w-6 text-primary" />
                             <span className="group-hover:text-primary transition-colors">Follow us on Instagram</span>
