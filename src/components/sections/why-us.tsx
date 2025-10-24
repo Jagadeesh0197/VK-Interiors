@@ -40,41 +40,42 @@ const reasons = [
 ];
 
 const getCardTransforms = (index: number, numCols: number) => {
-  const row = Math.floor(index / numCols);
-  const col = index % numCols;
+    const row = Math.floor(index / numCols);
+    const col = index % numCols;
 
-  // These values depend on card dimensions and gap size (w-full, gap-8)
-  // A more robust solution might measure these with refs.
-  const xOffset = 104; // Percentage-based for full width cards
-  const yOffset = 110; // Percentage, assuming aspect ratio and gap
+    const yOffset = 110; 
+    const y = row * yOffset;
 
-  let x = 0;
-  let y = row * yOffset;
+    let x = 0;
+    if (numCols === 2) {
+      // For 2 columns, cards are 50% width. We want to move them to -25% and 25% to be centered.
+      // x-translate is relative to the element's own size.
+      // So -50% and 50% will place them side-by-side with no gap.
+      x = col === 0 ? -52 : 52; // adding a little for the gap
+    } else if (numCols === 3) {
+        // For 3 columns, cards are ~33.3% width. 
+        // Middle card is at 0. Left and right are +/- 100% of their own width.
+      if (col === 0) x = -104;
+      if (col === 2) x = 104;
+    }
 
-  if (numCols === 2) {
-    x = col === 0 ? -xOffset / 2 : xOffset / 2;
-  } else if (numCols === 3) {
-    if (col === 0) x = -xOffset;
-    if (col === 2) x = xOffset;
-  }
-  
-  return {
-    initial: { x: 0, y: 0, scale: 1, zIndex: reasons.length - index },
-    animate: { x: `${x}%`, y: `${y}%`, scale: 1, zIndex: reasons.length - index },
-  };
+    return {
+      initial: { x: "-50%", y: 0, scale: 1, zIndex: reasons.length - index },
+      animate: { x: `${x}%`, y: `${y}%`, scale: 1, zIndex: reasons.length - index },
+    };
 };
 
 
 export function WhyUsSection() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.3 });
+  const isInView = useInView(ref, { once: true, amount: 0.2 });
   const { isLg, isSm } = useBreakpoint();
 
   const numCols = isLg ? 3 : isSm ? 2 : 1;
   const gridHeight = Math.ceil(reasons.length / numCols) * 280; // Approximate height
 
   return (
-    <section id="why-us" className="py-20 sm:py-32 bg-secondary/20">
+    <section id="why-us" className="py-20 sm:py-32 bg-secondary/20 overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
             className="mx-auto max-w-2xl text-center"
@@ -91,7 +92,7 @@ export function WhyUsSection() {
             </p>
         </motion.div>
         
-        <div ref={ref} className="mt-16 relative" style={{ height: `${gridHeight}px` }}>
+        <div ref={ref} className="mt-24 relative" style={{ height: `${gridHeight}px` }}>
           {reasons.map((reason, index) => {
             const { initial, animate } = getCardTransforms(index, numCols);
             
@@ -99,7 +100,7 @@ export function WhyUsSection() {
               <motion.div
                 key={index}
                 className="absolute w-full sm:w-1/2 lg:w-1/3 p-4"
-                style={{ top: 0, left: 0 }}
+                style={{ top: 0, left: '50%', transform: "translateX(-50%)" }}
                 initial={initial}
                 animate={isInView ? animate : initial}
                 transition={{ 
