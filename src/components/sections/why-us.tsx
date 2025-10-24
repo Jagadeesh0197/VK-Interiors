@@ -75,7 +75,7 @@ export function WhyUsSection() {
     };
 
     return (
-        <section id="why-us" className="py-20 sm:py-32 bg-secondary/20 overflow-hidden">
+        <section id="why-us" className="py-20 sm:py-32 bg-background overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <FadeIn className="mx-auto max-w-2xl text-center">
                 <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
@@ -100,6 +100,7 @@ export function WhyUsSection() {
                         top: '50%',
                         originX: '50%',
                         originY: '50%',
+                        zIndex: isCenterCard ? 10 : 1,
                     }}
                     initial={{
                         x: '-50%',
@@ -120,15 +121,21 @@ export function WhyUsSection() {
                     } : {}}
                 >
                     <Card className={`h-full text-center bg-card transition-shadow duration-300 ${!isInView && index !== 1 ? 'shadow-lg' : ''}`}>
-                    <CardHeader>
-                        <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
-                        {reason.icon}
-                        </div>
-                    </CardHeader>
-                    <CardContent className="flex flex-col gap-2">
-                        <CardTitle className="text-xl font-semibold">{reason.title}</CardTitle>
-                        <p className="text-foreground/70">{reason.description}</p>
-                    </CardContent>
+                      <motion.div
+                          initial={{ opacity: 0 }}
+                          animate={isInView ? { opacity: 1 } : {}}
+                          transition={{ delay: 0.5 + index * 0.1, duration: 0.5 }}
+                      >
+                        <CardHeader>
+                            <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
+                            {reason.icon}
+                            </div>
+                        </CardHeader>
+                        <CardContent className="flex flex-col gap-2">
+                            <CardTitle className="text-xl font-semibold">{reason.title}</CardTitle>
+                            <p className="text-foreground/70">{reason.description}</p>
+                        </CardContent>
+                      </motion.div>
                     </Card>
                 </motion.div>
                 );
