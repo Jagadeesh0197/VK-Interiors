@@ -1,33 +1,77 @@
+
 "use client";
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import Image from 'next/image';
 import { PlaceHolderImages, type ImagePlaceholder } from '@/lib/placeholder-images';
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from '@/components/ui/dialog';
-import { FadeIn } from '@/components/fade-in';
 import { ZoomIn } from 'lucide-react';
+import { motion, useInView } from 'framer-motion';
 
 export function GallerySection() {
   const galleryImages = PlaceHolderImages.filter(p => p.id.startsWith('gallery-'));
   const [selectedImage, setSelectedImage] = useState<ImagePlaceholder | null>(null);
 
+  const containerRef = useRef<HTMLDivElement>(null);
+  const isInView = useInView(containerRef, { once: true, amount: 0.2 });
+
+  const containerVariants = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const cardVariants = {
+    hidden: {
+      opacity: 0,
+      y: 100,
+      scale: 0.8,
+      rotate: -10
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      rotate: 0,
+      transition: {
+        type: 'spring',
+        damping: 15,
+        stiffness: 100,
+      },
+    },
+  };
+
   return (
     <section id="gallery" className="py-20 sm:py-32 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <FadeIn className="mx-auto max-w-2xl text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+          className="mx-auto max-w-2xl text-center"
+        >
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
             Our Projects
           </h2>
           <p className="mt-4 text-lg leading-8 text-foreground/80">
             A glimpse into the spaces we've transformed.
           </p>
-        </FadeIn>
+        </motion.div>
         
-        <FadeIn className="mt-16">
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {galleryImages.map((image) => (
+        <motion.div
+          ref={containerRef}
+          variants={containerVariants}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          className="mt-16 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"
+        >
+          {galleryImages.map((image) => (
+            <motion.div key={image.id} variants={cardVariants}>
               <button
-                key={image.id}
                 onClick={() => setSelectedImage(image)}
                 className="group relative block h-64 w-full overflow-hidden rounded-lg shadow-lg focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background"
                 aria-label={`View image: ${image.description}`}
@@ -44,9 +88,9 @@ export function GallerySection() {
                     <ZoomIn className="h-12 w-12 text-white/80" />
                 </div>
               </button>
-            ))}
-          </div>
-        </FadeIn>
+            </motion.div>
+          ))}
+        </motion.div>
       </div>
 
       <Dialog open={!!selectedImage} onOpenChange={(isOpen) => !isOpen && setSelectedImage(null)}>
