@@ -2,6 +2,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Home, Briefcase, Building, Hotel, Dumbbell, Scissors, DraftingCompass } from 'lucide-react';
 import { FadeIn } from '@/components/fade-in';
+import { FadeInFromLeft } from '@/components/fade-in-from-left';
+import { FadeInFromRight } from '@/components/fade-in-from-right';
 import { motion } from 'framer-motion';
 
 const services = [
@@ -81,32 +83,38 @@ export function ServicesSection() {
         </FadeIn>
         
         <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {services.map((service, index) => (
-            <FadeIn key={index} className="h-full">
-              <Card className="h-full text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2 bg-card">
-                <CardHeader>
-                  <motion.div
-                    className="relative mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 overflow-hidden"
-                    initial={{ scale: 0 }}
-                    whileInView={{ scale: 1 }}
-                    viewport={{ once: true, amount: 0.8 }}
-                    transition={{
-                      type: "spring",
-                      stiffness: 150,
-                      damping: 20,
-                      delay: 0.2 + index * 0.1,
-                    }}
-                  >
-                    {service.icon}
-                  </motion.div>
-                </CardHeader>
-                <CardContent className="flex flex-col gap-2">
-                  <CardTitle className="text-xl font-semibold">{service.title}</CardTitle>
-                  <p className="text-foreground/70">{service.description}</p>
-                </CardContent>
-              </Card>
-            </FadeIn>
-          ))}
+          {services.map((service, index) => {
+            const AnimationComponent = (index % 4 < 2) ? FadeInFromLeft : FadeInFromRight;
+            if (index % 2 === 0 && index % 4 !== 0 && index % 4 !== 1) {
+              
+            }
+            return (
+              <AnimationComponent key={index} className="h-full">
+                <Card className="h-full text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2 bg-card">
+                  <CardHeader>
+                    <motion.div
+                      className="relative mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10"
+                      initial={{ scale: 0 }}
+                      whileInView={{ scale: 1 }}
+                      viewport={{ once: true, amount: 0.8 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 150,
+                        damping: 20,
+                        delay: 0.2 + (index * 0.1),
+                      }}
+                    >
+                      {service.icon}
+                    </motion.div>
+                  </CardHeader>
+                  <CardContent className="flex flex-col gap-2">
+                    <CardTitle className="text-xl font-semibold">{service.title}</CardTitle>
+                    <p className="text-foreground/70">{service.description}</p>
+                  </CardContent>
+                </Card>
+              </AnimationComponent>
+            )
+          })}
         </div>
       </div>
     </section>
