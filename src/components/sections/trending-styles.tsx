@@ -52,7 +52,6 @@ function TrendingCarousel({ images }: { images: ImagePlaceholder[] }) {
       }
     });
 
-    // For the center-aligned, looped carousel, the main "snapped" slide is usually the first one in the in-view array.
     if (inView.length > 0) {
       slides.forEach(s => s.classList.remove('is-snapped'));
       const centerSlideIndex = inView[Math.floor(inView.length / 2)];
