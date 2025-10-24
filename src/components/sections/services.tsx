@@ -89,7 +89,8 @@ export function ServicesSection() {
                     className="relative mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 overflow-hidden"
                   >
                     <motion.div
-                      initial={{ x: '-110%' }}
+                      className="flex items-center justify-center"
+                      initial={{ x: '-100%' }}
                       whileInView={{ x: '0%' }}
                       viewport={{ once: true, amount: 0.8 }}
                       transition={{
