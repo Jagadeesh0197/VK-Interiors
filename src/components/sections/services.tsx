@@ -1,6 +1,8 @@
+"use client";
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Home, Briefcase, Building, Hotel, Dumbbell, Scissors, DraftingCompass } from 'lucide-react';
 import { FadeIn } from '@/components/fade-in';
+import { motion } from 'framer-motion';
 
 const services = [
   {
@@ -83,9 +85,19 @@ export function ServicesSection() {
             <FadeIn key={index} className="h-full">
               <Card className="h-full text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2 bg-card">
                 <CardHeader>
-                  <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
+                  <motion.div
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    transition={{
+                      type: "spring",
+                      stiffness: 260,
+                      damping: 20,
+                      delay: 0.2 + index * 0.1,
+                    }}
+                    className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10"
+                  >
                     {service.icon}
-                  </div>
+                  </motion.div>
                 </CardHeader>
                 <CardContent className="flex flex-col gap-2">
                   <CardTitle className="text-xl font-semibold">{service.title}</CardTitle>

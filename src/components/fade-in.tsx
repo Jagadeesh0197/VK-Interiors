@@ -10,7 +10,8 @@ export function FadeIn({ children, className }: { children: ReactNode, className
       ([entry]) => {
         if (entry.isIntersecting) {
           entry.target.classList.remove('opacity-0', 'translate-y-5');
-          observer.unobserve(entry.target);
+        } else {
+            entry.target.classList.add('opacity-0', 'translate-y-5');
         }
       },
       {
