@@ -1,6 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Users, PencilRuler, Gem, Clock, Medal, Smile } from 'lucide-react';
 import { FadeIn } from '@/components/fade-in';
+import { FadeInFromLeft } from '@/components/fade-in-from-left';
+import { FadeInFromRight } from '@/components/fade-in-from-right';
 
 const reasons = [
   {
@@ -49,21 +51,47 @@ export function WhyUsSection() {
         </FadeIn>
         
         <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {reasons.map((reason, index) => (
-            <FadeIn key={index} className="h-full">
-              <Card className="h-full text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2 bg-card">
-                <CardHeader>
-                  <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
-                    {reason.icon}
-                  </div>
-                </CardHeader>
-                <CardContent className="flex flex-col gap-2">
-                  <CardTitle className="text-xl font-semibold">{reason.title}</CardTitle>
-                  <p className="text-foreground/70">{reason.description}</p>
-                </CardContent>
-              </Card>
-            </FadeIn>
-          ))}
+          {reasons.map((reason, index) => {
+            let AnimationComponent;
+            // Logic for large screens (3 columns)
+            if (typeof window !== 'undefined' && window.innerWidth >= 1024) {
+              if (index % 3 === 0) {
+                AnimationComponent = FadeInFromLeft;
+              } else if (index % 3 === 2) {
+                AnimationComponent = FadeInFromRight;
+              } else {
+                AnimationComponent = FadeIn;
+              }
+            } 
+            // Logic for medium screens (2 columns)
+            else if (typeof window !== 'undefined' && window.innerWidth >= 640) {
+              if (index % 2 === 0) {
+                AnimationComponent = FadeInFromLeft;
+              } else {
+                AnimationComponent = FadeInFromRight;
+              }
+            }
+            // Logic for small screens (1 column)
+            else {
+              AnimationComponent = FadeIn;
+            }
+
+            return (
+              <AnimationComponent key={index} className="h-full">
+                <Card className="h-full text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2 bg-card">
+                  <CardHeader>
+                    <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
+                      {reason.icon}
+                    </div>
+                  </CardHeader>
+                  <CardContent className="flex flex-col gap-2">
+                    <CardTitle className="text-xl font-semibold">{reason.title}</CardTitle>
+                    <p className="text-foreground/70">{reason.description}</p>
+                  </CardContent>
+                </Card>
+              </AnimationComponent>
+            );
+          })}
         </div>
       </div>
     </section>
