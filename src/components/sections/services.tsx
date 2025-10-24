@@ -98,6 +98,7 @@ export function ServicesSection() {
                         damping: 20,
                         delay: 0.2 + index * 0.1,
                       }}
+                      className="flex items-center justify-center"
                     >
                       {service.icon}
                     </motion.div>
