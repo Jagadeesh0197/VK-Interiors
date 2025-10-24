@@ -86,10 +86,10 @@ export function ServicesSection() {
               <Card className="h-full text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2 bg-card">
                 <CardHeader>
                   <div
-                    className="relative mx-auto flex h-16 w-16 items-center justify-center overflow-hidden rounded-full bg-primary/10"
+                    className="relative mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 overflow-hidden"
                   >
                     <motion.div
-                      initial={{ x: '-100%' }}
+                      initial={{ x: '-110%' }}
                       whileInView={{ x: '0%' }}
                       viewport={{ once: true, amount: 0.8 }}
                       transition={{
@@ -98,7 +98,6 @@ export function ServicesSection() {
                         damping: 20,
                         delay: 0.2 + index * 0.1,
                       }}
-                      className="flex items-center justify-center"
                     >
                       {service.icon}
                     </motion.div>
