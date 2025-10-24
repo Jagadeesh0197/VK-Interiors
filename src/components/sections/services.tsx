@@ -85,24 +85,20 @@ export function ServicesSection() {
             <FadeIn key={index} className="h-full">
               <Card className="h-full text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2 bg-card">
                 <CardHeader>
-                  <div
+                  <motion.div
                     className="relative mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 overflow-hidden"
+                    initial={{ scale: 0 }}
+                    whileInView={{ scale: 1 }}
+                    viewport={{ once: true, amount: 0.8 }}
+                    transition={{
+                      type: "spring",
+                      stiffness: 150,
+                      damping: 20,
+                      delay: 0.2 + index * 0.1,
+                    }}
                   >
-                    <motion.div
-                      className="flex items-center justify-center"
-                      initial={{ x: '-100%' }}
-                      whileInView={{ x: '0%' }}
-                      viewport={{ once: true, amount: 0.8 }}
-                      transition={{
-                        type: "spring",
-                        stiffness: 150,
-                        damping: 20,
-                        delay: 0.2 + index * 0.1,
-                      }}
-                    >
-                      {service.icon}
-                    </motion.div>
-                  </div>
+                    {service.icon}
+                  </motion.div>
                 </CardHeader>
                 <CardContent className="flex flex-col gap-2">
                   <CardTitle className="text-xl font-semibold">{service.title}</CardTitle>
