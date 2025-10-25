@@ -12,8 +12,9 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { Menu, Building } from "lucide-react";
+import { Menu } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { CustomLogo } from "@/components/icons/custom-logo";
 
 const navLinks = [
   { href: "#about", label: "About" },
@@ -45,7 +46,7 @@ export function SiteHeader() {
     >
       <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2 font-bold text-lg text-primary">
-          <Building className="h-6 w-6" />
+          <CustomLogo className="h-6 w-6" />
           <span>VK Interiors</span>
         </Link>
         <nav className="hidden items-center gap-6 md:flex">
@@ -79,7 +80,7 @@ export function SiteHeader() {
               </SheetHeader>
               <div className="flex h-full flex-col p-6 pt-0">
                 <Link href="/" className="mb-8 flex items-center gap-2 font-bold text-lg text-primary" onClick={closeMobileMenu}>
-                  <Building className="h-6 w-6" />
+                  <CustomLogo className="h-6 w-6" />
                   <span>VK Interiors</span>
                 </Link>
                 <nav className="flex flex-col gap-6">
