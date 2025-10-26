@@ -60,7 +60,7 @@ export function ImageTransition({ images }: { images: ImagePlaceholder[] }) {
             src={currentImage.imageUrl}
             alt={currentImage.description}
             fill
-            priority={images.indexOf(currentImage) === 0}
+            priority={currentImageIndex === 0}
             className="object-cover"
             data-ai-hint={currentImage.imageHint}
             sizes="100vw"
