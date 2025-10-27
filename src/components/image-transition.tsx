@@ -25,24 +25,27 @@ export function ImageTransition({ images }: { images: ImagePlaceholder[] }) {
   const isEven = currentImageIndex % 2 === 0;
 
   const variants = {
-    enter: {
+    enter: (isEven: boolean) => ({
       opacity: 0,
-      scale: 1,
-      x: 0,
-    },
-    center: (isEven: boolean) => ({
+      scale: isEven ? 1 : 1.1,
+      x: isEven ? "-5%" : "5%",
+    }),
+    center: {
       zIndex: 1,
       opacity: 1,
       scale: isEven ? 1.1 : 1,
-      x: 0,
-      transition: { duration: 8, ease: "linear" },
-    }),
-    exit: (isEven: boolean) => ({
+      x: isEven ? "5%" : "-5%",
+      transition: {
+        opacity: { duration: 1.5 },
+        scale: { duration: 8, ease: "linear" },
+        x: { duration: 8, ease: "linear" }
+      },
+    },
+    exit: {
       zIndex: 0,
       opacity: 0,
-      scale: isEven ? 1 : 1.1,
       transition: { duration: 1.5 }
-    })
+    }
   };
   
   return (
@@ -72,4 +75,3 @@ export function ImageTransition({ images }: { images: ImagePlaceholder[] }) {
     </div>
   );
 }
-
