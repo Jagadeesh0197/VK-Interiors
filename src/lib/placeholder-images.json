@@ -3,7 +3,7 @@
     {
       "id": "hero-image-1",
       "description": "A beautifully designed modern living room with large windows and comfortable furniture.",
-      "imageUrl": "https://images.unsplash.com/photo-1554995207-c18c203602cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBsaXZpbmclMjByb29tfGVufDB8fHx8MTcyMjAwMjc2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/best-home.jpg",
       "imageHint": "interior design"
     },
     {
@@ -51,7 +51,7 @@
     {
       "id": "gallery-6",
       "description": "An elegant dining area set for a formal dinner.",
-      "imageUrl": "https://images.unsplash.com/photo-1551516594-56cb78394645?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxob3NwaXRhbGl0eSUyMGRlc2lnbnxlbnwwfHx8fDE3MjE4MjA1OTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/gallery-6.jpg",
       "imageHint": "hospitality design"
     },
     {
