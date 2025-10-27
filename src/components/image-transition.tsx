@@ -25,21 +25,22 @@ export function ImageTransition({ images }: { images: ImagePlaceholder[] }) {
   const isEven = currentImageIndex % 2 === 0;
 
   const variants = {
-    enter: (isEven: boolean) => ({
+    enter: {
       opacity: 0,
-      scale: isEven ? 1 : 1.1,
-      x: isEven ? 100 : -100,
-    }),
-    center: {
+      scale: 1,
+      x: 0,
+    },
+    center: (isEven: boolean) => ({
       zIndex: 1,
       opacity: 1,
       scale: isEven ? 1.1 : 1,
       x: 0,
       transition: { duration: 8, ease: "linear" },
-    },
+    }),
     exit: (isEven: boolean) => ({
       zIndex: 0,
       opacity: 0,
+      scale: isEven ? 1 : 1.1,
       transition: { duration: 1.5 }
     })
   };
@@ -64,12 +65,11 @@ export function ImageTransition({ images }: { images: ImagePlaceholder[] }) {
             className="object-cover"
             data-ai-hint={currentImage.imageHint}
             sizes="100vw"
-            style={{
-                transformOrigin: 'center center'
-            }}
           />
+           <div className="absolute inset-0 bg-black/30" />
         </motion.div>
       </AnimatePresence>
     </div>
   );
 }
+
