@@ -1,7 +1,7 @@
 "use client";
 
-import { useActionState, useEffect, useState } from "react";
-import { useFormStatus } from "react-dom";
+import { useEffect, useState } from "react";
+import { useFormState, useFormStatus } from "react-dom";
 import { submitContactForm } from "@/app/actions";
 import { useToast } from "@/hooks/use-toast";
 import { Button } from "@/components/ui/button";
@@ -24,7 +24,7 @@ export function FloatingContactButton() {
   const [isOpen, setIsOpen] = useState(false);
   const { toast } = useToast();
   const initialState = { message: null, errors: {}, success: false };
-  const [state, dispatch] = useActionState(submitContactForm, initialState);
+  const [state, dispatch] = useFormState(submitContactForm, initialState);
 
   useEffect(() => {
     if (state.success) {
