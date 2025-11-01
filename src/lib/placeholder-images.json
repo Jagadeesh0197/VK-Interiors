@@ -3,151 +3,151 @@
     {
       "id": "hero-image-1",
       "description": "A beautifully designed modern living room with large windows and comfortable furniture.",
-      "imageUrl": "https://images.unsplash.com/photo-1554995207-c18c203602cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBsaXZpbmclMjByb29tfGVufDB8fHx8MTcyMjAwMjc2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1606744824163-985d376605aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxpbnRlcmlvciUyMGRlc2lnbnxlbnwwfHx8fDE3NjE5OTAyNDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "interior design"
     },
     {
       "id": "hero-image-2",
       "description": "A stylish and modern interior with a focus on minimalist design and natural light.",
-      "imageUrl": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxpbnRlcmlvciUyMGRlc2lnbnxlbnwwfHx8fDE3MjE4MTk3MTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1646987916641-1f3c8992daa2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtb2Rlcm4lMjBpbnRlcmlvcnxlbnwwfHx8fDE3NjIwMDQzOTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "modern interior"
     },
     {
       "id": "about-image",
       "description": "A team of designers collaborating and discussing plans in a creative workspace.",
-      "imageUrl": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbvRlcmlvciUyMGRlc2lnbiUyMHRlYW0lMjBkaXNjdXNzaW5nfGVufDB8fHx8MTcyMjU0MjYxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1569098644584-210bcd375b59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxkZXNpZ25lciUyMHRlYW18ZW58MHx8fHwxNzYyMDIyMzg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "designer team"
     },
     {
       "id": "gallery-1",
       "description": "A minimalist modern kitchen with a marble island.",
-      "imageUrl": "https://images.unsplash.com/photo-1556912173-3bb406ef7e77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBraXRjaGVufGVufDB8fHx8MTcyMTgyMDI4MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1639405069836-f82aa6dcb900?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtb2Rlcm4lMjBraXRjaGVufGVufDB8fHx8MTc2MTk3MTE2MHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "modern kitchen"
     },
     {
       "id": "gallery-2",
       "description": "A serene bedroom with soft lighting and natural textures.",
-      "imageUrl": "/images/best-home.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1634344656611-0773d8dbbe2c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bW9kZXJuJTIwYmVkcm9vbXxlbnwwfHx8fDE3NjE5NTg3NTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "modern bedroom"
     },
     {
       "id": "gallery-3",
       "description": "A luxury bathroom with a freestanding tub and gold fixtures.",
-      "imageUrl": "https://images.unsplash.com/photo-1600607687939-ce8a67761195?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxleHBlbnNpdmUlMjBiYXRocm9vbXxlbnwwfHx8fDE3MjI0OTgyNDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1696987007764-7f8b85dd3033?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBiYXRocm9vbXxlbnwwfHx8fDE3NjE5NjM1Mzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "luxury bathroom"
     },
     {
       "id": "gallery-4",
       "description": "A sleek and professional corporate office space.",
-      "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2V8ZW58MHx8fHwxNzIxODIwMjgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1623177623442-979c1e42c255?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtb2Rlcm4lMjBvZmZpY2V8ZW58MHx8fHwxNzYxOTY5NjE2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "modern office"
     },
     {
       "id": "gallery-5",
       "description": "A vibrant and eclectic living room with colorful furniture and a gallery wall.",
-      "imageUrl": "https://images.unsplash.com/photo-1554995207-c18c203602cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBsaXZpbmclMjByb29tfGVufDB8fHx8MTcyMjAwMjc2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1632120669818-ed5498030e32?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlY2xlY3RpYyUyMGxpdmluZ3Jvb218ZW58MHx8fHwxNzYyMDIyMzg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "eclectic livingroom"
     },
     {
       "id": "gallery-6",
       "description": "An elegant dining area set for a formal dinner.",
-      "imageUrl": "https://images.unsplash.com/photo-1551516594-56cb78394645?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxob3NwaXRhbGl0eSUyMGRlc2lnbnxlbnwwfHx8fDE3MjE4MjA1OTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1741506131058-533fcf894483?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxob3NwaXRhbGl0eSUyMGRlc2lnbnxlbnwwfHx8fDE3NjIwMjIzODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "hospitality design"
     },
     {
       "id": "trending-livingroom-1",
       "description": "Spacious living room with a large sectional sofa and contemporary art.",
-      "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBsaXZpbmclMjByb29tfGVufDB8fHx8MTcyMjAwMjc2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1720247520881-672bc136da8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtb2Rlcm4lMjBsaXZpbmdyb29tfGVufDB8fHx8MTc2MTk0OTk0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "modern livingroom"
     },
     {
       "id": "trending-livingroom-2",
       "description": "A bright living room with minimalist furniture and a view of the city.",
-      "imageUrl": "https://images.unsplash.com/photo-1567016376408-0226e4d0c1e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmaW5lJTIwbGl2aW5nJTIwcm9vbXxlbnwwfHx8fDE3MjI0OTgyNjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1669387448840-610c588f003d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxicmlnaHQlMjBsaXZpbmdyb29tfGVufDB8fHx8MTc2MjAyMjM4NXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "bright livingroom"
     },
     {
       "id": "trending-livingroom-3",
       "description": "Cozy living room with a fireplace and warm lighting.",
-      "imageUrl": "https://images.unsplash.com/photo-1611689233355-d0d6919ce1a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtb2Rlcm4lMjBsaXZpbmclMjByb29tfGVufDB8fHx8MTcyMjAwMjc2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1674230227190-05b589f2f730?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb3p5JTIwbGl2aW5ncm9vbXxlbnwwfHx8fDE3NjE5NjEzNzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "cozy livingroom"
     },
     {
       "id": "trending-livingroom-4",
       "description": "An eclectic living room with vibrant colors and unique decor.",
-      "imageUrl": "https://images.unsplash.com/photo-1554995207-c18c203602cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBsaXZpbmclMjByb29tfGVufDB8fHx8MTcyMjAwMjc2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1709544345889-8d41db99eebe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxlY2xlY3RpYyUyMGxpdmluZ3Jvb218ZW58MHx8fHwxNzYyMDIyMzg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "eclectic livingroom"
     },
     {
       "id": "trending-bedroom-1",
       "description": "A modern bedroom with a large window and a minimalist bed frame.",
-      "imageUrl": "https://images.unsplash.com/photo-1540518614846-7eded433c457?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBiZWRyb29tfGVufDB8fHx8MTcyMjAwMjg3MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1604580040660-f0a7f9abaea6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBiZWRyb29tfGVufDB8fHx8MTc2MTk1ODc1MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "modern bedroom"
     },
     {
       "id": "trending-bedroom-2",
       "description": "A cozy bedroom with plush bedding and soft, warm lighting.",
-      "imageUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb3p5JTIwYmVkcm9vbXxlbnwwfHx8fDE3MjIwMDI5MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1552858725-a19e7fcd3ac4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb3p5JTIwYmVkcm9vbXxlbnwwfHx8fDE3NjIwMDk5NTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "cozy bedroom"
     },
     {
       "id": "trending-bedroom-3",
       "description": "A luxury bedroom with a canopy bed and elegant decor.",
-      "imageUrl": "https://images.unsplash.com/photo-1615875995438-d65a259c7344?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxseXV4dXJ5JTIwYmVkcm9vbXxlbnwwfHx8fDE3MjIwMDI5NDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1587985064135-0366536eab42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxsdXh1cnklMjBiZWRyb29tfGVufDB8fHx8MTc2MTk1ODc1MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "luxury bedroom"
     },
     {
       "id": "trending-bedroom-4",
       "description": "A bedroom with a rustic design, featuring wood accents and natural light.",
-      "imageUrl": "https://images.unsplash.com/photo-1593056121406-b333758b8f28?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxydXN0aWMlMjBiZWRyb29tfGVufDB8fHx8MTcyMjQ5ODMyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1750271336583-a6d9e975015c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxydXN0aWMlMjBiZWRyb29tfGVufDB8fHx8MTc2MjAyMjM4NXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "rustic bedroom"
     },
     {
       "id": "trending-outdoor-1",
       "description": "A modern patio with comfortable seating and a fire pit.",
-      "imageUrl": "https://images.unsplash.com/photo-1613977257363-313227a24911?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBwYXRpb3xlbnwwfHx8fDE3MjI0OTgyODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1629078692974-a778fc29497b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBwYXRpb3xlbnwwfHx8fDE3NjIwMjIzODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "modern patio"
     },
     {
       "id": "trending-outdoor-2",
       "description": "A beautiful garden with a stone pathway and lush greenery.",
-      "imageUrl": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvdXRkb29yJTIwbGl2aW5nfGVufDB8fHx8MTcyMjU0MjcwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1637267286334-745a8bb11003?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxvdXRkb29yJTIwbGl2aW5nfGVufDB8fHx8MTc2MjAyMjM4NXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "outdoor living"
     },
     {
       "id": "trending-outdoor-3",
       "description": "A poolside lounge area with modern furniture and umbrellas.",
-      "imageUrl": "https://images.unsplash.com/photo-1562438668-bcf0b15846c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwb29sc2lkZSUyMGxvdW5nZXxlbnwwfHx8fDE3MjI0OTgyMTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1700202693988-76352fec080d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwb29sc2lkZSUyMGxvdW5nZXxlbnwwfHx8fDE3NjIwMDg1MjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "poolside lounge"
     },
     {
       "id": "trending-outdoor-4",
       "description": "An outdoor dining area with a wooden table and string lights.",
-      "imageUrl": "https://images.unsplash.com/photo-1525825252321-f3a8907a16b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxvdXRkb29yJTIwZGluaW5nfGVufDB8fHx8fDE3MjI0NTY4MDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1591728534642-b68f534bfee5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxvdXRkb29yJTIwZGluaW5nfGVufDB8fHx8MTc2MjAyMjM4NXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "outdoor dining"
     },
     {
       "id": "trending-kitchen-1",
       "description": "A sleek modern kitchen with white cabinets and a large island.",
-      "imageUrl": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBraXRjaGVufGVufDB8fHx8MTcyMjAwMzE0Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1556912167-f556f1f39fdf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBraXRjaGVufGVufDB8fHx8MTc2MTk3MTE2MHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "modern kitchen"
     },
     {
       "id": "trending-kitchen-2",
       "description": "A farmhouse kitchen with open shelving and a large sink.",
-      "imageUrl": "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmYXJtaG91c2UlMjBraXRjaGVufGVufDB8fHx8MTcyMjAwMzE3M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1600493505423-474fea65ad9e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmYXJtaG91c2UlMjBraXRjaGVufGVufDB8fHx8MTc2MjAyMjM4NXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "farmhouse kitchen"
     },
     {
       "id": "trending-kitchen-3",
       "description": "A luxury kitchen with dark cabinets and high-end appliances.",
-      "imageUrl": "https://images.unsplash.com/photo-1604238294699-80419275a743?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxseXV4dXJ5JTIwa2l0Y2hlbnxlbnwwfHx8fDE3MjIwMDMyMTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1622372738946-62e02505feb3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjBraXRjaGVufGVufDB8fHx8MTc2MjAyMjIxOHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "luxury kitchen"
     },
     {
       "id": "trending-kitchen-4",
       "description": "A minimalist kitchen with clean lines and integrated appliances.",
-      "imageUrl": "https://images.unsplash.com/photo-1564243952329-b0038f82875e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwa2l0Y2hlbnxlbnwwfHx8fDE3MjIwMDMyNDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1704428381341-ed1399e47f5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtaW5pbWFsaXN0JTIwa2l0Y2hlbnxlbnwwfHx8fDE3NjE5OTIzMzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "minimalist kitchen"
     }
   ]
